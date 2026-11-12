@@ -1,3 +1,12 @@
+<p align="center">
+  <a href="https://aplyna.com">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/aplyna-logo-dark.svg">
+      <img src="assets/aplyna-logo.svg" alt="Aplyna" width="260">
+    </picture>
+  </a>
+</p>
+
 # Aplyna SDK
 
 In-app purchases, subscriptions, offerings and customer attributes for iOS, Android, Flutter and React Native, backed by the [Aplyna](https://aplyna.com) billing service.
