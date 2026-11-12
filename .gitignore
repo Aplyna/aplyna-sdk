@@ -1,0 +1,11 @@
+.build/
+build/
+.gradle/
+.dart_tool/
+node_modules/
+Pods/
+.swiftpm/
+local.properties
+*.lock
+.DS_Store
+react-native/lib/

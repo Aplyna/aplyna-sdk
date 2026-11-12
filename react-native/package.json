@@ -1,0 +1,61 @@
+{
+  "name": "@aplyna/react-native",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplyna in-app purchases, subscriptions, events and remote configuration for React Native",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "test",
+    "scripts",
+    "tsconfig.json",
+    "ios",
+    "android/src",
+    "android/build.gradle",
+    "AplynaReactNative.podspec",
+    "react-native.config.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --import tsx --test test/*.test.ts",
+    "prepack": "node scripts/prepare.mjs && npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18.3",
+    "react-native": ">=0.76"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "react": "19.3.1",
+    "react-native": "0.86.3",
+    "typescript": "^5.9.3",
+    "tsx": "^4.21.0"
+  },
+  "codegenConfig": {
+    "name": "AplynaSpec",
+    "type": "modules",
+    "jsSrcsDir": "src/specs",
+    "android": {
+      "javaPackageName": "com.aplyna.reactnative"
+    },
+    "ios": {
+      "modules": {
+        "Aplyna": {
+          "className": "Aplyna"
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aplyna/aplyna-sdk.git",
+    "directory": "react-native"
+  },
+  "homepage": "https://aplyna.com"
+}

@@ -1,0 +1,11 @@
+# The shared Swift and Kotlin cores are generated copies (npm run sdk:prepare) and are
+# ignored by git, but the published package must contain them.
+!ios/Classes/Core/
+!ios/Classes/Core/**
+!android/src/main/kotlin/com/aplyna/sdk/
+!android/src/main/kotlin/com/aplyna/sdk/**
+build/
+.dart_tool/
+android/.gradle/
+android/build/
+test/sandbox_smoke_test.dart

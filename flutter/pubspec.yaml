@@ -1,0 +1,23 @@
+name: aplyna
+description: Aplyna in-app purchases, subscriptions, events and remote configuration for iOS and Android.
+version: 1.0.0
+publish_to: none
+homepage: https://aplyna.com
+repository: https://github.com/aplyna/aplyna-sdk/tree/main/flutter
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+  flutter: '>=3.24.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.aplyna.flutter
+        pluginClass: AplynaPlugin
+      ios:
+        pluginClass: AplynaPlugin
